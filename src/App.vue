@@ -1,47 +1,24 @@
 <template>
   <v-app>
-    <v-app-bar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Monster</span>
-        <span class="font-weight-light">Slayer</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        text
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Beta Release</span>
-      </v-btn>
-    </v-app-bar>
-
     <v-content>
-      <HelloWorld/>
+      <magic-grid> :mtg="mtg"</magic-grid>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-import { 
-  VApp,
-  VAppBar, 
-  VToolbarTitle,  
-  VContent 
-  } from 'vuetify/lib'
+import MagicGrid from './components/MagicGrid'
+import { mtg } from './assets/MTG-api'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    VApp,
-    VAppBar, 
-    VToolbarTitle, 
-    VContent 
+    MagicGrid
   },
-  data: () => ({
-    //
-  }),
+  data: () => {
+    return {
+      mtg
+    }
+  },
 };
 </script>
-// add another file
