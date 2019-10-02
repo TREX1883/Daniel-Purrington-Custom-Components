@@ -16,7 +16,8 @@ export default {
     props: ["cards"],
     components: {
        MagicCards 
-    }
+    },
+
 }
 </script>
 
