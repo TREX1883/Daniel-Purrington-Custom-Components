@@ -1,14 +1,16 @@
 <template>
   <v-app>
     <v-content>
-      <magic-grid> :mtg="mtg"</magic-grid>
+      <magic-grid :cards="cards"></magic-grid>
     </v-content>
   </v-app>
 </template>
 
 <script>
 import MagicGrid from './components/MagicGrid'
-import { mtg } from './assets/MTG-api'
+import { cards } from './assets/MTG-api'
+
+console.log(cards)
 
 export default {
   name: 'App',
@@ -17,7 +19,7 @@ export default {
   },
   data: () => {
     return {
-      mtg
+      cards
     }
   },
 };

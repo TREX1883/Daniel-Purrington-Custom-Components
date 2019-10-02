@@ -2,10 +2,9 @@
     <v-card>
         <v-card-title>
             <div>
-                <h1>Test</h1>
-                <h3> {{ mtg.cards.name }} </h3>
+                <h3> {{ card.name }} </h3>
                 <div>
-                    {{ mtg.colors }}
+                    {{ card.type }}
                 </div>
             </div>
         </v-card-title>    
@@ -17,7 +16,11 @@
 
 <script>
 export default {
-    props: ["mtg"],
+    props: {
+        card: {
+            type: Object
+        }
+    }
 }
 </script>
 

@@ -1,9 +1,9 @@
 <template>
     <v-container>
-        <h1>Test</h1>
+        <h1>Grid Test</h1>
         <v-row>
-            <v-col cols="3" v-for="mtg in mtg" :key="mtg.cards">
-                <magic-cards :mtg="mtg"></magic-cards>
+            <v-col cols="3" v-for="card in cards" :key="card.multiverseid">
+                <magic-cards :card="card"></magic-cards>
             </v-col> 
         </v-row>    
     </v-container>
@@ -13,7 +13,7 @@
 import MagicCards from "../components/MagicCards"
 
 export default {
-    props: ["mtg"],
+    props: ["cards"],
     components: {
        MagicCards 
     }
