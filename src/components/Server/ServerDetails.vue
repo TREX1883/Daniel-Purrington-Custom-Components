@@ -1,5 +1,6 @@
 <template>
     <div class="col-xs-12 col-sm-6">
+        <h1>serverDetails.vue</h1>
         <p v-if="!server">Please select a Server</p>
         <p v-else>Server #{{ server.id }} selected, Status: {{ server.status }}</p>
         <hr>

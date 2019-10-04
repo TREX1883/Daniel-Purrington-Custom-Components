@@ -1,10 +1,13 @@
 <template>
+<div> 
+    <!-- <h1>server.vue</h1> -->
     <li
             class="list-group-item"
             style="cursor: pointer"
             @click="serverSelected">
         Server #{{ server.id }}
     </li>
+</div>
 </template>
 
 <script>

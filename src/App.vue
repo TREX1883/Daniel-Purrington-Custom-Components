@@ -3,8 +3,8 @@
         <app-header></app-header>
         <hr>
         <div class="row">
-            <servers></servers>
             <app-server-details></app-server-details>
+            <servers></servers>
         </div>
         <hr>
         <app-footer></app-footer>
