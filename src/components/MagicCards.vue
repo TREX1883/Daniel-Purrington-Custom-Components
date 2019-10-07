@@ -2,10 +2,12 @@
     <v-card>
         <v-card-title>
             <div>
-                <h1>Test</h1>
                 <h3> {{ mtg.name }} </h3>
                 <div>
-                    {{ mtg.colors }}
+                    {{ mtg.type }}
+                </div>
+                <div>
+                    {{ mtg.rarity }}
                 </div>
             </div>
         </v-card-title>    

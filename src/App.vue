@@ -8,7 +8,7 @@
 
 <script>
 import MagicGrid from './components/MagicGrid'
-import { mtgs } from './assets/MTG-api'
+import { cards } from './assets/MTG-api'
 
 export default {
   name: 'App',
@@ -17,7 +17,7 @@ export default {
   },
   data: () => {
     return {
-      mtgs
+      mtgs: cards
     }
   },
 };
