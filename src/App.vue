@@ -1,4 +1,5 @@
 <template>
+<v-app>
     <div class="container">
         <app-header></app-header>
         <hr>
@@ -9,6 +10,7 @@
         <hr>
         <app-footer></app-footer>
     </div>
+</v-app>
 </template>
 
 <script>
