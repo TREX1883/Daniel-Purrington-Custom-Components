@@ -1,24 +1,32 @@
 <template>
-  <v-app>
-    <v-content>
-      <magic-grid :mtgs="mtgs"></magic-grid>
-    </v-content>
-  </v-app>
+    <div class="container">
+        <app-header></app-header>
+        <hr>
+        <div class="row">
+            <app-server-details></app-server-details>
+            <servers></servers>
+        </div>
+        <hr>
+        <app-footer></app-footer>
+    </div>
 </template>
 
 <script>
-import MagicGrid from './components/MagicGrid'
-import { cards } from './assets/MTG-api'
+    import Header from './components/Shared/Header.vue';
+    import Footer from './components/Shared/Footer.vue';
+    import Servers from './components/Server/Servers.vue';
+    import ServerDetails from './components/Server/ServerDetails.vue';
 
-export default {
-  name: 'App',
-  components: {
-    MagicGrid
-  },
-  data: () => {
-    return {
-      mtgs: cards
+    export default {
+        components: {
+            appHeader: Header,
+            Servers,
+            'app-server-details': ServerDetails,
+            'app-footer': Footer
+        }
     }
-  },
-};
 </script>
+
+<style>
+
+</style>
