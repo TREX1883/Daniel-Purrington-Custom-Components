@@ -5,7 +5,7 @@
             class="list-group-item"
             style="cursor: pointer"
             @click="serverSelected">
-        Server #{{ server.id }}
+        <button class="button">Server #{{ server.id }}</button>
     </li>
 </div>
 </template>

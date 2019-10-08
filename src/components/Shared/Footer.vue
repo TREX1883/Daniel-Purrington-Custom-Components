@@ -7,7 +7,7 @@
             </div>
   </div>-->
   <v-footer>
-      <v-row justify="center">&copy; {{ new Date().getFullYear() }}</v-row>
+      <v-row class="footer" justify="center">&copy; {{ new Date().getFullYear() }}</v-row>
   </v-footer>
 </template>
 
@@ -16,8 +16,7 @@
 </script>
 
 <style>
-/* .footer-style { 
-  justify-content: center;
-  background-color: yellow;
-} */
+.footer {
+    background-color: gray;
+}
 </style>

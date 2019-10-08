@@ -1,9 +1,7 @@
 <template>
-    <div class="col-xs-12 col-sm-6">
+    <div class="col">
 
-<h1>servers.vue</h1>
-<div class="red">Test
-</div>
+<h1>List of all Servers</h1>
         <ul class="list-group">
             <app-server
                 v-for="server in servers" V-bind:key = "server.id"
@@ -24,6 +22,7 @@
                   { id: 3, status: 'Unknown'},
                   { id: 4, status: 'Normal'},
                   { id: 5, status: 'Critical'},
+                  { id: 6, status: 'Unknown'},
                 //   { id: 5, server: 'Test'},
               ]
             };
@@ -35,10 +34,8 @@
 </script>
 
 <style>
-template {
-    background-color: green;
-}
-.red {
-    background-color: red;
+.list-group {
+    background-color: rgb(187, 184, 184);
+    padding: 10px;
 }
 </style>
